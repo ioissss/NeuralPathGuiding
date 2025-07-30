@@ -1,5 +1,5 @@
 # NeuralPathGuiding
-截止25年，最前沿的Neural Path Guiding技术,沿用了论文《Neural Parametric Mixtures for Path Guiding》的代码框架，在其中复现了另外一篇论文《Online Neural Path Guiding with Normalized Anisotropic Spherical Gaussians》。
+截止25年，最前沿的Neural Path Guiding技术复现,沿用了论文《Neural Parametric Mixtures for Path Guiding》的代码框架，在其中复现了另外一篇论文《Online Neural Path Guiding with Normalized Anisotropic Spherical Gaussians》。
 复现过程中，发现样本效率低下的问题（radiance为0的路径对训练神经网络没有贡献），遂利用《Neural Radiance Caching》的思路，利用一个神经网络预测radiance，再用预测的radiance来训练路径引导网络，以期提供训练效率。
 
 同时，对训练效果进行了可视化：
